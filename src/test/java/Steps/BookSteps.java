@@ -46,7 +46,7 @@ public class BookSteps extends Steps {
     }
 
     private void login(String login, String pass) throws Exception{
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         PageObjectLogin loginPage = PageFactory.initElements(driver, PageObjectLogin.class);
