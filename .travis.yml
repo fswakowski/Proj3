@@ -1,5 +1,8 @@
 language: java
 before_install:
+- wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
+- unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.12/bin/
+- export PATH=$PATH:$PWD/resources
 - wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
 - tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C resources
 - export PATH=$PATH:$PWD/resources
