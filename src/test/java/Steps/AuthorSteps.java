@@ -131,7 +131,7 @@ public class AuthorSteps extends Steps {
 
 
     private void login(String login, String pass) throws Exception{
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
         PageObjectLogin loginPage = PageFactory.initElements(driver, PageObjectLogin.class);
         loginPage.login(login, pass);
