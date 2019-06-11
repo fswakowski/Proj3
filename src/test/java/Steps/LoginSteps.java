@@ -25,7 +25,7 @@ public class LoginSteps extends Steps {
 
     @Given("Mam webdrivera")
     public void givenIHaveWebdriverWithDefaultSite(){
-        System.setProperty("webdriver.geckordriver.driver", "resources/geckodriver.exe");
+        System.setProperty("webdriver.geckordriver.driver", "resources/geckodriver");
         driver = new FirefoxDriver();
         wait = new WebDriverWait(driver, 30);
     }
